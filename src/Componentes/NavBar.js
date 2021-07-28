@@ -1,55 +1,57 @@
-import React,{Component} from 'react';
+import React from 'react';
  import 'bootstrap/dist/css/bootstrap.min.css' ;
- 
+ import { Nav ,  Navbar } from 'react-bootstrap';
+ import logo from './tienda.jpg';
 
- 
 
 import './NavBar.css';
 
 
-function NavBar(){
-    return (
-      
-      <div className="container">
 
-       <header className="divHeader" id="divHeader">
-        ABRIGOS PARA EL MUNDO
-      </header>
-               
-        <nav id="navHeader"   className="navbar navbar-expand-sm navbar-light bg-light">
-         
-        <button className="navbar-toggler"  type="button" data-toggle="collapse" data-target="#opciones" >
-        <span className="navbar-toggler-icon"></span>
-        </button>
+function NavBars(){
+  return (
+    
+    <div >
+
+      <div className="ptitulo">
+         ABRIGOS PARA EL MUNDO
+      </div>
+       
+      <Navbar bg="MenuColor" variant="dark" sticky="top" expand="sm" collapseOnSelect>
+        
+    
+        <Navbar.Brand href="index.html">
+        <img src={logo} alt="Logo"  className="imgRedonda"></img>{' '}
+           Inicio        
+        </Navbar.Brand>    
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"></Navbar.Toggle>
+
+         <Navbar.Collapse>
+
+         <Nav>                            
+          <Nav.Link href="carrito.html">Carrito</Nav.Link>
+          <Nav.Link href="contacto.html">Contacto</Nav.Link>
+          </Nav>
+
+         </Navbar.Collapse>
+
+
+      </Navbar>
+      <div className="content">
+           ...Parte de Cuerpo....
+      </div>
              
-        <div className="collapse navbar-collapse" id="opciones">
-          <ul id="ulMenu" className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link" href="index.html">Inicio</a>
-            </li>
+   
+    </div>
+  );
+  }
 
-            <li className="nav-item">
-              <a className="nav-link" href="carrito.html">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-sm-8"> Carrito </div>
-                    <div id="divCantCarrito" className="col-sm-4 pCarrito"></div>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
 
+
+
+    export default NavBars;
 
 
  
-
-      </div>
-    );
-    }
-    export default NavBar;
-
 
  
