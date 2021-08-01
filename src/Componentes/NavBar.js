@@ -1,12 +1,9 @@
 import React from 'react';
- import 'bootstrap/dist/css/bootstrap.min.css' ;
- import { Nav ,  Navbar } from 'react-bootstrap';
- import logo from './tienda.jpg';
-
-
+import 'bootstrap/dist/css/bootstrap.min.css' ;
+import { Nav ,  Navbar } from 'react-bootstrap';
+import logo from './tienda.jpg';
+import CartWidget from './CartWidget';
 import './NavBar.css';
-
-
 
 function NavBars(){
   return (
@@ -29,7 +26,10 @@ function NavBars(){
          <Navbar.Collapse>
 
          <Nav>                            
-          <Nav.Link href="carrito.html">Carrito</Nav.Link>
+          <Nav.Link href="carrito.html">
+          <CartWidget/>                             
+          </Nav.Link>
+            
           <Nav.Link href="contacto.html">Contacto</Nav.Link>
           </Nav>
 
@@ -37,10 +37,7 @@ function NavBars(){
 
 
       </Navbar>
-      <div className="content">
-           ...Parte de Cuerpo....
-      </div>
-             
+                 
    
     </div>
   );
