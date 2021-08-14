@@ -2,9 +2,9 @@
 import React from 'react';
 import { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css' ;
-//import  {RutaImgProductos} from '../Componentes/assets/Ruta_img';
-import  Producto_6 from './assets/img_productos/producto_6.png';
  
+ 
+const foto_1 = 'producto_6.png';
 
 class  ItemCount extends Component{
      constructor(props){
@@ -40,9 +40,10 @@ class  ItemCount extends Component{
             return (
     
              <div >
-     
+    
 
-            <img src={Producto_6} alt="Carrito"   ></img>{' '}
+     <img src={require(`../img/${foto_1}`).default}  alt="Carrito"></img>
+
 
              <div >  <span style={colorP} >Producto:</span>  {this.props.producto}  <span style={colorP}>Precio:</span> {this.props.precio}</div>
              <div >  <span style={colorP} >En Stock:</span>  {this.props.stock} </div>

@@ -1,1 +1,0 @@
-export const RutaImgProductos= require.context('../assets/img_productos',true)
