@@ -7,7 +7,8 @@
     "nombre_img": "producto_7.png",
     "tipo": "Gabardina de lana de gran oferta para hombre abrigo de invierno cálido de Color liso prendas d YUA",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0,
+    "stock" : 20
   },
   {
     "sku": "008",
@@ -17,7 +18,8 @@
     "nombre_img": "producto_8.png",
     "tipo": "Chompa Hombre Newport Fz Greg I20-Verde",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0,
+    "stock" : 21
   },
   {
     "sku": "009",
@@ -27,7 +29,8 @@
     "nombre_img": "producto_9.png",
     "tipo": "Abrigo Hombre Christian Lacroix Jkt Detanv W20-Negro",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0,
+    "stock" : 22
   },
   {
     "sku": "010",
@@ -37,7 +40,8 @@
     "nombre_img": "producto_10.png",
     "tipo": "Abrigo Hombre Basement Jkt Tednv W20-Negro",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0 ,
+    "stock" : 23
   },
   {
     "sku": "011",
@@ -47,7 +51,8 @@
     "nombre_img": "producto_11.png",
     "tipo": "Abrigo de lana corto para hombre abrigo de lana cálido para hombre de mediana edad chaquetas g MIS",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0 ,
+    "stock" : 24
   },
   {
     "sku": "012",
@@ -57,7 +62,8 @@
     "nombre_img": "producto_12.png",
     "tipo": "ZOGAA, chaquetas y abrigos largos de Otoño Invierno, chaquetas de me =",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0 ,
+    "stock" : 25
   },
   {
     "sku": "013",
@@ -67,7 +73,8 @@
     "nombre_img": "producto_13.png",
     "tipo": "abrigo con cuello de soporte para hombre traje ajustado Chaqueta con botones abrigo blazer Top YUA",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0 ,
+    "stock" : 26
   },
   {
     "sku": "014",
@@ -77,7 +84,8 @@
     "nombre_img": "producto_14.png",
     "tipo": "Abrigo Hombre Christian Lacroix Jkt Detach W20-Marrón",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0 ,
+    "stock" : 27
   },
   {
     "sku": "015",
@@ -87,7 +95,8 @@
     "nombre_img": "producto_15.png",
     "tipo": "abrigo de mezcla de lana de invierno para hombre abrigos de lana para el trabajo de alta calid HON",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0 ,
+    "stock" : 28
   },
   {
     "sku": "016",
@@ -97,7 +106,8 @@
     "nombre_img": "producto_16.png",
     "tipo": "Abrigo de lana a la moda para hombre gabardina larga de Color sólido cálido para invierno abri YUA",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0 ,
+    "stock" : 29
   },
   {
     "sku": "017",
@@ -107,7 +117,8 @@
     "nombre_img": "producto_17.png",
     "tipo": "Abrigo largo grueso con cremallera para hombre abrigos de lana de doble cuello de Color sólido YUA",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0 ,
+    "stock" : 30
   },
   {
     "sku": "018",
@@ -117,7 +128,8 @@
     "nombre_img": "producto_18.png",
     "tipo": "Laamei de otoño abrigo de lana de invierno para hombre abrigo de lana para hombre abrigo largo HON",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0 ,
+    "stock" : 31
   },
   {
     "sku": "019",
@@ -127,7 +139,8 @@
     "nombre_img": "producto_19.png",
     "tipo": "Abrigo de lana cálido genuino para hombre abrigo Casual de otoño invierno a cuadros con cuello SAI",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0 ,
+    "stock" : 32
   },
   {
     "sku": "020",
@@ -137,7 +150,8 @@
     "nombre_img": "producto_20.png",
     "tipo": "abrigos de mezcla de lana de invierno para hombre gabardina informal Simple de marca de moda p YUA",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0 ,
+    "stock" : 33
   },
   {
     "sku": "021",
@@ -147,7 +161,8 @@
     "nombre_img": "producto_21.png",
     "tipo": "Chaqueta de lana de 100% de doble cara para hombre chaqueta con bolsillos grandes con cuello v HON",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0 ,
+    "stock" : 34
   },
   {
     "sku": "022",
@@ -157,7 +172,8 @@
     "nombre_img": "producto_22.png",
     "tipo": "abrigos de mezcla de lana de invierno para hombre gabardina informal Simple de marca de moda p MIS",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0 ,
+    "stock" : 35
   },
   {
     "sku": "023",
@@ -167,7 +183,8 @@
     "nombre_img": "producto_23.png",
     "tipo": "Nuevo alta calidad abrigo de lana suelta gran casuales de los hombres X-Giro largo Collar de d MIS",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0 ,
+    "stock" : 36
   },
   {
     "sku": "024",
@@ -177,7 +194,8 @@
     "nombre_img": "producto_24.png",
     "tipo": "invierno otoño gruesas chaquetas de lana Abrigos Hombre moda Casual Slim Fit Casual chaquetas SAI",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0 ,
+    "stock" : 37
   },
   {
     "sku": "025",
@@ -187,7 +205,8 @@
     "nombre_img": "producto_25.png",
     "tipo": "Abrigo Casual de lana de doble botonadura para hombre 4XL estilo militar Peacoat hombre Cachem YUA",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0 ,
+    "stock" : 38
   },
   {
     "sku": "026",
@@ -197,7 +216,8 @@
     "nombre_img": "producto_26.png",
     "tipo": "nuevo abrigo de lana de alta calidad para otoño e invierno abrigo largo cortaviento de color s SAI",
     "detalle": 0,
-    "cant_pedido": 0
+    "cant_pedido": 0 ,
+    "stock" : 39
   }
    
 ]
