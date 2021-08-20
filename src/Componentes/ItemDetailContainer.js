@@ -3,23 +3,18 @@ import { Component,useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css' ;
  import ItemDetail from './ItemDetail';
  import stockData from '../prendas.json'; 
+import { useParams } from 'react-router-dom';
 
-
-
+ 
 const  ItemDetailContainer = (props) => {
     const colorP={'font-weight': 'bold'}
 
-   let visible ={display:'none'};
-  
-    if (props.mostrar==='1'){
-        visible={display:'block'};
-    }
- 
+    const {sku} = useParams();
 
+    
           const [item, setItem] = useState({sku:'',nombre:'',precio:0,nombre_img:'producto_6.png',tipo:'', stock:0 });
 
 
- 
      useEffect(() => {
 
  
@@ -28,10 +23,9 @@ const  ItemDetailContainer = (props) => {
             setTimeout(() => {                
                 const proceso = true ;
 
-            const itemDet =  stockData.find(x => x.sku === props.sku);
-          // const itemDet =  stockData.find(x => x.sku === '007');
-
-          
+            //const itemDet =  stockData.find(x => x.sku === props.sku);
+            const itemDet =  stockData.find(x => x.sku === sku);
+                   
            setItem({...item, sku:itemDet.sku,nombre:itemDet.nombre , precio:itemDet.precio,nombre_img:itemDet.nombre_img,tipo:itemDet.tipo,stock:itemDet.stock})
 
             
@@ -58,7 +52,7 @@ const  ItemDetailContainer = (props) => {
             
 
           
-     }, []) ;
+     }, [sku]) ;
         
     
             return (
@@ -66,7 +60,8 @@ const  ItemDetailContainer = (props) => {
                  <div  >
 
 
-    <ItemDetail style={visible}
+
+    <ItemDetail 
                        sku = {item.sku}                                   
                        producto = {item.nombre}   
                        nombre_img ={item.nombre_img} 
@@ -82,3 +77,5 @@ const  ItemDetailContainer = (props) => {
   }
 
     export default ItemDetailContainer;
+
+    

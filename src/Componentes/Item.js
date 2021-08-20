@@ -3,38 +3,33 @@ import React from 'react';
 import { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css' ;
 import ItemDetailContainer from './ItemDetailContainer';
+import { useHistory } from 'react-router-dom';
 
-class  Item extends Component{
+const  Item = (props) =>{
 
-
-    onVerDetalle =() => {
-               
-        <div>
-                  
-            {
-                console.log('Hola click' + this.props.sku )
-            }
-        </div>
-         
-     }
-     render() {
-         
-           const colorP={'font-weight': 'bold'}
-            return (
+    const colorP={'font-weight': 'bold'}
+    const history =useHistory();
     
+    const idsku = `${process.env.PUBLIC_URL}/ItemDetailContainer/${props.sku}`
+
+    const onVerDetalle =() => history.push(idsku);
+
+     return (
+         
+              
              <div >
                       
-            <img src={require(`../img/${this.props.nombre_img}`).default}  alt="Carrito" className='img-fluid img-thumbnail' max-width='100%' height='auto'></img>
-             <div >  <span style={colorP} >Producto: </span>{this.props.sku} - {this.props.producto}
+            <img src={require(`../img/${props.nombre_img}`).default}  alt="Carrito" className='img-fluid img-thumbnail' max-width='100%' height='auto'></img>
+             <div >  <span style={colorP} >Producto: </span>{props.sku} - {props.producto}
             
              </div>
-             <button  className="btn btn-danger">Ver más</button>
+             <button  className="btn btn-danger" onClick={onVerDetalle}>Ver más</button>
             
 
              
              </div>
-             );
-    }
+            
+     )
  
 }
 

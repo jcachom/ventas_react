@@ -4,8 +4,7 @@ import ItemCount from './ItemCount';
  
 class  ItemListContainer extends  Component {
     render() {
-        //const colorP={background:'yellow'}
-
+       
         return (
             <div  >
             {this.props.titulo}

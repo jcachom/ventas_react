@@ -7,8 +7,8 @@ function CartWidget(){
     
     <div >
     
+
     <label for="Name">Carrito</label>
-   
     <img src={Carrito} alt="Carrito"  className="cartRedonda"></img>{' '}
         
     <input style={{width: '30px'}} type="number" value="0"   disabled   className="formatCarrito"/>
@@ -18,8 +18,4 @@ function CartWidget(){
 
   );
   }
-
-
-
-
     export default CartWidget;

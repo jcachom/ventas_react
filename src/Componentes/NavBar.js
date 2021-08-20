@@ -4,6 +4,7 @@ import { Nav ,  Navbar } from 'react-bootstrap';
 import logo from './tienda.jpg';
 import CartWidget from './CartWidget';
 import './NavBar.css';
+ 
 
 function NavBars(){
   return (
@@ -14,6 +15,9 @@ function NavBars(){
          ABRIGOS PARA EL MUNDO
       </div>
        
+      
+       
+      
       <Navbar bg="MenuColor" variant="dark" sticky="top" expand="sm" collapseOnSelect>
         
     
@@ -43,9 +47,7 @@ function NavBars(){
   );
   }
 
-
-
-
+  
     export default NavBars;
 
 

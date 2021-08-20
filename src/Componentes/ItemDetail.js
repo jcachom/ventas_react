@@ -2,7 +2,6 @@ import React from 'react';
 import { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css' ;
  
- 
 class  ItemDetail extends Component{
      constructor(props){
          super(props);
