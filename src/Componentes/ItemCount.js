@@ -41,13 +41,7 @@ class  ItemCount extends Component{
     
              <div >
     
-
-     <img src={require(`../img/${foto_1}`).default}  alt="Carrito"></img>
-
-
-             <div >  <span style={colorP} >Producto:</span>  {this.props.producto}  <span style={colorP}>Precio:</span> {this.props.precio}</div>
-             <div >  <span style={colorP} >En Stock:</span>  {this.props.stock} </div>
-
+ 
 
              <div className="form-inline">
              <button onClick={this.onDisPedido} className="btn btn-danger" >-</button>            
@@ -55,7 +49,7 @@ class  ItemCount extends Component{
              <button onClick={this.onAdicPedido} className="btn btn-danger">+</button>
              </div>
             
-             <div>  <button className="btn btn-primary">Agregar a carrito</button></div>
+            
            
             </div>
    
@@ -63,6 +57,7 @@ class  ItemCount extends Component{
         );
     }
   }
+
 
     export default ItemCount;
 

@@ -1,14 +1,20 @@
 import React from 'react';
-import { Component } from 'react';
+
 import 'bootstrap/dist/css/bootstrap.min.css' ;
+import ItemCount from './ItemCount';
+import { useHistory } from 'react-router-dom';
  
-class  ItemDetail extends Component{
-     constructor(props){
-         super(props);
-       
-     }
+
+  const  ItemDetail = (props) =>{
+
+
+    const history =useHistory();    
+    const cart = `${process.env.PUBLIC_URL}/Carrito`
+    const onVerCarrito =() => history.push(cart);
+
+
     
-    render() {
+  
         const colorP={'font-weight': 'bold'}
         const borde = {
           'border': '3px solid green'
@@ -18,16 +24,20 @@ class  ItemDetail extends Component{
     
              <div style={borde}>
             <div><span style={colorP} >Detalle Producto</span> </div>
-           <img src={require(`../img/${this.props.nombre_img}`).default}></img>
-             <div >  <span style={colorP} >Producto:</span>  {this.props.producto}  <span style={colorP}>Precio:</span> {this.props.precio}</div>
-             <div >  <span style={colorP} >Detalle:</span>  {this.props.tipo} </div>
-             <div >  <span style={colorP} >En Stock:</span>  {this.props.stock} </div>
+           <img src={require(`../img/${props.nombre_img}`).default}></img>
+             <div >  <span style={colorP} >Producto:</span>  {props.producto}  <span style={colorP}>Precio:</span> {props.precio}</div>
+             <div >  <span style={colorP} >Detalle:</span>  {props.tipo} </div>
+             <div >  <span style={colorP} >En Stock:</span>  {props.stock} </div>
              
+             <ItemCount cant_inicial="1" stock= {props.stock}></ItemCount>
+
+             <div>  <button className="btn btn-primary" onClick={onVerCarrito}>Terminar mi compra</button></div>
+
             </div>
    
 
-        );
-    }
+        )
+    
   }
 
     export default ItemDetail;

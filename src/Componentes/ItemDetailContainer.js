@@ -23,7 +23,7 @@ const  ItemDetailContainer = (props) => {
             setTimeout(() => {                
                 const proceso = true ;
 
-            //const itemDet =  stockData.find(x => x.sku === props.sku);
+        
             const itemDet =  stockData.find(x => x.sku === sku);
                    
            setItem({...item, sku:itemDet.sku,nombre:itemDet.nombre , precio:itemDet.precio,nombre_img:itemDet.nombre_img,tipo:itemDet.tipo,stock:itemDet.stock})

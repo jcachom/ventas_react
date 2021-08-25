@@ -2,7 +2,7 @@
 import React from 'react';
 import { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css' ;
-import ItemDetailContainer from './ItemDetailContainer';
+
 import { useHistory } from 'react-router-dom';
 
 const  Item = (props) =>{
