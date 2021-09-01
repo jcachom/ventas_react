@@ -1,5 +1,5 @@
 import React from 'react';
-import { Component,useEffect, useState } from 'react';
+import {  useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css' ;
  import ItemDetail from './ItemDetail';
  import stockData from '../prendas.json'; 

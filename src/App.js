@@ -1,25 +1,26 @@
-import React from 'react';
-//import NavBars from './Componentes/NavBar';
-//import ItemListContainer from './Componentes/ItemListContainer';
-//import ItemList from './Componentes/ItemList';
-//import ItemDetailContainer from './Componentes/ItemDetailContainer';
-//import ItemDetail from './Componentes/ItemDetail'
+import React,{useState} from 'react';
+import Componente1 from './Componentes/Componente1';
 import Router from './Componentes/Router';
+import CartState from './context/CartState';
  
 
-function App(){
+const  App=()=> {
+ 
+  /*
+    const [isDarkMode, setisDarkMode] = useState('yes')
+   const [cart, setCart] = useState([])
+*/
+
     return (
    <div>
-     
-        <Router></Router>
-      
+     <CartState>
+     <Router></Router>
+     </CartState>
+               
    </div>
     );
 }
 
-//  <NavBars/>  
-  // <ItemListContainer titulo="Listado de Productos" />
-  //<ItemDetailContainer sku={'007'} mostrar={'1'}></ItemDetailContainer>
-    //   <ItemList></ItemList>
-
+ 
 export default App ;
+ 
