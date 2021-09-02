@@ -8,6 +8,8 @@ import { useContext } from 'react';
 import CartContext from '../context/CartContext';
 
  
+
+ 
 const foto_1 = 'producto_6.png';
 
  
@@ -104,7 +106,7 @@ const foto_1 = 'producto_6.png';
              
 
             
-
+         
                        
             </div>
    

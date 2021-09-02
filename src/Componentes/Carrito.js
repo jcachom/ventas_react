@@ -2,6 +2,8 @@ import React from 'react';
 import { useContext,useState,useEffect } from 'react';
 import CartContext from '../context/CartContext';
 import 'bootstrap/dist/css/bootstrap.min.css' ;
+import { useHistory } from 'react-router-dom';
+ 
 
 
 const Carrito = () => {
@@ -12,6 +14,16 @@ const Carrito = () => {
           const divTable ={ border: '1px solid red',
                          width : '60%'}
           const colorP={'font-weight': 'bold'}
+
+          const history =useHistory(); 
+          const ruta_ItemList = `${process.env.PUBLIC_URL}/`
+
+
+          const onVerItemList =() =>
+          {
+            history.push(ruta_ItemList);      
+          } 
+
 
           const removeCarrito =(e, sku) => {
           
@@ -40,8 +52,14 @@ const Carrito = () => {
     handlesumar();
   });
 
-          return (
+          return <>
+           
+          { cartItems.length===0 ?   
+          
+          <div class="container" style={divTable}>
+          <span style={colorP} >Items no adicionados</span>  </div>  :
 
+        
             <div style={altura}  >Productos seleccionados:  
             { cartItems.map((data, key) => {
            return (       
@@ -88,12 +106,24 @@ const Carrito = () => {
           <div class="container" style={divTable}>
           <span style={colorP} >Total a pagar :</span> {vSumTotal}
            
+           <div>
+           <button   className="btn btn-primary" onClick={onVerItemList} >Más productos</button>  
+            <p></p>
+           </div>
+         
           </div>
+
+          
+
                 
         </div>
- 
 
-       ) 
+        
+
+
+ 
+           }
+        </>
 
 }
 
