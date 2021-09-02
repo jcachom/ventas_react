@@ -1,56 +1,39 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css' ;
-import { Nav ,  Navbar } from 'react-bootstrap';
-import logo from './tienda.jpg';
-import CartWidget from './CartWidget';
-import './NavBar.css';
- 
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Nav, Navbar } from "react-bootstrap";
+import logo from "./tienda.jpg";
+import CartWidget from "./CartWidget";
+import "./NavBar.css";
 
-function NavBars(){
+function NavBars() {
   return (
-    
-    <div >
+    <div>
+      <div className="ptitulo">ABRIGOS PARA EL MUNDO</div>
 
-      <div className="ptitulo">
-         ABRIGOS PARA EL MUNDO
-      </div>
-       
-      
-       
-      
-      <Navbar bg="MenuColor" variant="dark" sticky="top" expand="sm" collapseOnSelect>
-        
-    
+      <Navbar
+        bg="MenuColor"
+        variant="dark"
+        sticky="top"
+        expand="sm"
+        collapseOnSelect
+      >
         <Navbar.Brand href="index.html">
-        <img src={logo} alt="Logo"  className="imgRedonda"></img>{' '}
-           Inicio        
-        </Navbar.Brand>    
+          <img src={logo} alt="Logo" className="imgRedonda"></img> Inicio
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"></Navbar.Toggle>
 
-         <Navbar.Collapse>
+        <Navbar.Collapse>
+          <Nav>
+            <Nav.Link href="carrito.html">
+              <CartWidget />
+            </Nav.Link>
 
-         <Nav>                            
-          <Nav.Link href="carrito.html">
-          <CartWidget/>                             
-          </Nav.Link>
-            
-          <Nav.Link href="contacto.html">Contacto</Nav.Link>
+            <Nav.Link href="contacto.html">Contacto</Nav.Link>
           </Nav>
-
-         </Navbar.Collapse>
-
-
+        </Navbar.Collapse>
       </Navbar>
-                 
-   
     </div>
   );
-  }
+}
 
-  
-    export default NavBars;
-
-
- 
-
- 
+export default NavBars;
