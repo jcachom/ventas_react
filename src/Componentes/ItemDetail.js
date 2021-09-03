@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ItemCount from "./ItemCount";
-//import {  useState } from 'react';
+ 
 
 const ItemDetail = (props) => {
   const colorP = { "font-weight": "bold" };
@@ -30,6 +30,7 @@ const ItemDetail = (props) => {
       </div>
 
       <ItemCount
+         id ={props.id}
         sku={props.sku}
         cant_inicial="1"
         stock={props.stock}

@@ -69,7 +69,7 @@ const Router = () => {
           />
           <Route
             exact
-            path={process.env.PUBLIC_URL + "/ItemDetailContainer/:sku"}
+            path={process.env.PUBLIC_URL + "/ItemDetailContainer/:id"}
             component={ItemDetailContainer}
           />
         </Switch>

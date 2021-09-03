@@ -37,7 +37,9 @@ const ItemCount = (props) => {
 
     if (!aux) {
       addToCart({
+        id: props.id,
         sku: props.sku,
+        stock: props.stock,
         cant_pedido: cant_pedido,
         producto: props.producto,
         precio: props.precio,
@@ -46,7 +48,9 @@ const ItemCount = (props) => {
       removeItem(props.sku);
 
       addToCart({
+        id: props.id,
         sku: props.sku,
+        stock: props.stock,
         cant_pedido: aux.cant_pedido + cant_pedido,
         producto: props.producto,
         precio: props.precio,

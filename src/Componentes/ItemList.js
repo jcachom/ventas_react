@@ -7,8 +7,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import PreLoader from "./preLoader";
 
 const ItemList = () => {
-
-
   const [itemsList, setitemsList] = useState([]);
 
   useEffect(() => {
@@ -20,7 +18,17 @@ const ItemList = () => {
         if (QuerySnapshot.size === 0) {
           console.log("no items");
         }
-        setitemsList(QuerySnapshot.docs.map((document) => document.data()));
+
+        const newlist = QuerySnapshot.docs.map((collection) => {
+          const data = collection.data();
+          data["id"] = collection.id;
+          return data;
+        });
+
+        setitemsList(newlist);
+
+        console.log("getfirebase:");
+        console.log(itemsList);
       })
       .catch((error) => console.log(error));
   }, []);
@@ -31,11 +39,11 @@ const ItemList = () => {
     <>
       {itemsList.length === 0 ? (
         <div class="container">
-          <PreLoader></PreLoader>
+          <PreLoader mensaje="Cargando"></PreLoader>
         </div>
       ) : (
         <div>
-          {console.log({ itemsList })}
+          {console.log(itemsList)}
 
           <div style={altura}>Listado de Productos </div>
 
@@ -51,6 +59,7 @@ const ItemList = () => {
                 <Grid container item xs={6} spacing={3}>
                   <div key={key}>
                     <Item
+                      id={data.id}
                       sku={data.sku}
                       producto={data.nombre}
                       nombre_img={data.nombre_img}
@@ -66,5 +75,3 @@ const ItemList = () => {
   );
 };
 export default ItemList;
-
-//  { stockData.map((data, key) => {

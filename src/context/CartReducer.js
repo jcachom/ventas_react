@@ -1,4 +1,4 @@
-import { SHOW_HIDE_CART, ADD_TO_CART, REMOVE_ITEM } from "../Componentes/Type";
+import { SHOW_HIDE_CART, ADD_TO_CART, REMOVE_ITEM ,REMOVE_ALL } from "../Componentes/Type";
 
 const CartReducer = (state, action) => {
   switch (action.type) {
@@ -22,6 +22,14 @@ const CartReducer = (state, action) => {
         ),
       };
     }
+
+    case REMOVE_ALL: {
+      return {
+        ...state,
+        cartItems: [],
+      };
+    }
+
     default:
       return state;
   }

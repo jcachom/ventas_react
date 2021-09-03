@@ -8,7 +8,8 @@ const Item = (props) => {
   const colorP = { "font-weight": "bold" };
   const history = useHistory();
 
-  const idsku = `${process.env.PUBLIC_URL}/ItemDetailContainer/${props.sku}`;
+  //const idsku = `${process.env.PUBLIC_URL}/ItemDetailContainer/${props.sku}`;
+  const idsku = `${process.env.PUBLIC_URL}/ItemDetailContainer/${props.id}`;
 
   const onVerDetalle = () => history.push(idsku);
 
